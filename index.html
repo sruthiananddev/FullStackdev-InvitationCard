@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BirthdaypartyInvitationCard</title>
+</head>
+<body>
+
+  <header>
+    <figure>
+      <img src="https://tse1.mm.bing.net/th?id=OIP.Laf6eui-neqeUJraGjGYqwHaGN&pid=Api" style="display: block;  width: 400px; height: 400px;"alt="A description of the image" />
+      <!-- <figcaption></figcaption> -->
+    </figure>
+    <h1><span style="color: crimson;">Invitation Card</span> </h1>
+    <nav>
+      <ul>
+        <li><a href="#details">Event Details</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="details">
+      <h2>Event Details</h2>
+   
+      <p>Join us for Our Dearest son  John's <strong>10th Birthday Party</strong></p>
+
+      <ul>
+        <li><strong>Date:</strong> May 10, 2025</li>
+        <li><strong>Time:</strong> 3:00 PM - 6:00 PM</li>
+        <li><strong>Location:</strong>
+          (<a href="https://maps.google.com">LakePalace </a>)
+        </li>
+      </ul>
+
+      <h3>Things to Bring:</h3>
+      <ul>
+        <li>Snacks</li>
+        <li>Games</li>
+        <li>gifts</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h2>Schedule</h2>
+      <ol>
+        <li>3:00 PM - Welcome & Greetings</li>
+        <li>3:30 PM - Fun Games and Cultural programs</li>
+        <li>4:30 PM - Cake Cutting</li>
+        <li>5:30 PM - Gift Opening & Goodbyes</li>
+      </ol>
+    </section>
+
+    <section id="rsvp">
+      <h2>RSVP</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <p>Will you attend?</p>
+        <label><input type="radio" name="attend" value="yes" required /> Yes</label><br />
+        <label><input type="radio" name="attend" value="no" /> No</label><br /><br />
+
+        <label for="comments">Any Comments?</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br /><br />
+
+        <input type="submit" value="Submit RSVP" />
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 John's Birthday Bash......</p>
+  </footer>
+
+</body>
+</html>
